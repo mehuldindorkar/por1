@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist", // ✅ Changed from "dist/spa" to "dist" for Vercel
+    outDir: "dist/spa",
   },
   plugins: [react(), expressPlugin()],
   resolve: {

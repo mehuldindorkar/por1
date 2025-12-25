@@ -20,19 +20,21 @@ import {
 
 export default function Index() {
   const technicalSkills = [
-    "Python for Data Analytics",
-    "Pandas, NumPy, Matplotlib",
-    "Power BI / Tableau",
-    "MongoDB"
+    "Excel",
+    "SQL (Beginners Level)",
+    "Python (Pandas, NumPy)",
+    "Data Collection",
+    "Power BI",
+    "Data Cleaning & Preprocessing",
+    "Dashboard Development"
   ];
 
   const softSkills = [
-    "Open-Minded Team Contributor",
-    "Collaborative Problem-Solving",
-    "Quick Learner",
-    "Adaptive",
-    "Honest",
-    "Consistent"
+    "Analytical Thinking",
+    "Problem-Solving",
+    "Attention to Detail",
+    "Effective Communication",
+    "Time Management"
   ];
 
   const handleResumeDownload = () => {
@@ -97,7 +99,7 @@ export default function Index() {
                 <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
                 <a href="#education" className="text-white/80 hover:text-white transition-colors">Education</a>
                 <a href="#skills" className="text-white/80 hover:text-white transition-colors">Skills</a>
-                <a href="#experience" className="text-white/80 hover:text-white transition-colors">Experience</a>
+                <a href="#projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
                 <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
               </div>
             </div>
@@ -118,8 +120,7 @@ export default function Index() {
                     MCA Student & Data Analytics Enthusiast
                   </p>
                   <p className="text-lg text-white/80 leading-relaxed">
-                    Passionate about building full-stack applications and creating insightful 
-                    data dashboards. Currently pursuing Masters in Computer Applications at LJ University.
+                    MCA student with strong skills in cleaning, organizing, and analyzing data. Experienced with Power BI, Tableau, SQL, and Python (Pandas, NumPy). I enjoy turning raw data into clear insights and visuals, with a problem-solving and adaptable approach.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -154,7 +155,7 @@ export default function Index() {
                 <div className="relative">
                   <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-400/20 to-pink-400/20 backdrop-blur-sm border border-white/10 flex items-center justify-center animate-shimmer overflow-hidden">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F36066ed775c34d10bee511bc842f7339%2Fd3eef8f4e2c544a39d64522940233b76?format=webp&width=800"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F36066ed775c34d10bee511bc842f7339%2F5a5fac1f4b974a019083caecd9716fc7?format=webp&width=800"
                       alt="Mehul Dindorkar - Profile Picture"
                       className="w-full h-full object-cover rounded-full"
                     />
@@ -190,10 +191,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/80 leading-relaxed">
-                    Passionate and curious MCA student from LJ University with a BCA background from ITM (SLS) Baroda. 
-                    Experienced in building full-stack MERN projects and creating insightful dashboards through data 
-                    cleaning and analysis. Known for being adaptive, honest, and consistent. Eager to gain real-world 
-                    experience and contribute meaningfully to a data-driven environment.
+                    MCA student at LJ University with a BCA from ITM (SLS) Baroda, skilled in data cleaning, preprocessing, visualization, and analysis. Proficient in Power BI, Tableau, SQL, and Python libraries (Pandas, NumPy, Matplotlib). Experienced in working with real-world datasets, improving data quality, and preparing structured datasets for accurate reporting and insights. Known for adaptability, integrity, and strong problem-solving skills, with a growing interest in data-driven decision-making.
                   </p>
                 </CardContent>
               </Card>
@@ -204,19 +202,10 @@ export default function Index() {
                     Current Focus
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold mb-2 text-white">Order Nova Development</h4>
-                    <p className="text-white/80 text-sm">
-                      Currently developing a product comparison tool that shows real-time prices and offers across multiple platforms.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-white">Learning & Growth</h4>
-                    <p className="text-white/80 text-sm">
-                      Continuously expanding my knowledge in data analytics and dashboard development.
-                    </p>
-                  </div>
+                <CardContent>
+                  <p className="text-white/80 text-sm leading-relaxed">
+                    Right now, I'm working on improving my skills in Excel, SQL, and web scraping. I'm focusing on learning the advanced parts of Excel and SQL in a simple, practical way. I also download real datasets from Kaggle and other websites and practice cleaning and organizing them every day to get better at understanding data.
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -243,7 +232,7 @@ export default function Index() {
                       </CardTitle>
                       <CardDescription className="text-white/60">2024 - 2026</CardDescription>
                     </div>
-                    <Badge className="bg-gradient-to-r from-purple-500 to-pink-500">Current</Badge>
+                    <Badge className="bg-gradient-to-r from-purple-500 to-pink-500">Ongoing</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -327,41 +316,35 @@ export default function Index() {
           </div>
         </section>
 
-        {/* Work Experience Section */}
-        <section id="experience" className="py-20 px-4">
+        {/* Projects Section */}
+        <section id="projects" className="py-20 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Work Experience</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Hands On Projects</h2>
               <p className="text-white/80 text-lg">
-                Projects and internships that shaped my career
+                Selected projects and data initiatives
               </p>
             </div>
             <div className="space-y-8">
               <Card className="bg-white/10 backdrop-blur-md border-white/20">
                 <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="flex items-center gap-2 text-white">
-                        <Briefcase className="h-5 w-5 text-purple-400" />
-                        MERN Stack Development Intern
-                      </CardTitle>
-                      <CardDescription className="text-white/60">Webbrains Stack</CardDescription>
-                    </div>
-                    <Badge className="bg-gradient-to-r from-purple-500 to-pink-500">Internship</Badge>
-                  </div>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-orange-400" />
+                    Rohit Sharma Performance Analysis Dashboard
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Cricket Performance Dashboard</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/80 mb-4">
-                    Built a freelancing website using the MERN stack, gaining hands-on experience with 
-                    React.js, Node.js, Express.js, and MongoDB. Developed user authentication, project 
-                    management features, and responsive UI components. As part of daily routine, I converted 
-                    messy datasets into cleaned datasets and created interactive dashboards for data visualization.
+                    Created the entire dataset manually and analyzed it using Power BI. Covers Rohit Sharma's performance from 2019 to 2025. Visualizes key stats like runs, batting average, strike rate, centuries, and half-centuries. Designed the dashboard to be simple, clear, and easy for anyone to understand. Converts raw cricket numbers into meaningful insights and highlights.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/30 text-white">React.js</Badge>
-                    <Badge className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/30 text-white">Node.js</Badge>
-                    <Badge className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/30 text-white">Express.js</Badge>
-                    <Badge className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/30 text-white">MongoDB</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Power BI</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Data Collection</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Data Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Sports Analytics</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Dashboard Design</Badge>
+                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border-orange-400/30 text-white">Cricket Stats</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -370,51 +353,136 @@ export default function Index() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-white">
                     <BarChart3 className="h-5 w-5 text-blue-400" />
-                    Data Analytics Project
+                    India’s Population Analyst Till 2021
                   </CardTitle>
-                  <CardDescription className="text-white/60">Market Trends Dashboard</CardDescription>
+                  <CardDescription className="text-white/60">Power BI Dashboard</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/80 mb-4">
-                    Performed comprehensive data cleaning and created interactive dashboards to track and 
-                    analyze market trends. Daily tasks included converting messy and unstructured datasets 
-                    into clean, organized formats and developing insightful dashboards. Utilized Python libraries 
-                    like Pandas and NumPy for data processing, and created visualizations using Matplotlib and Power BI.
+                    Developed a Power BI dashboard for India's population, analyzing state-wise literacy, gender ratio, and growth trends. Cleaned and transformed data using Power Query for accurate insights. Designed charts, maps, and slicers for intuitive state-level visualization.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Python</Badge>
-                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Pandas</Badge>
-                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">NumPy</Badge>
                     <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Power BI</Badge>
-                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Matplotlib</Badge>
+                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Power Query</Badge>
+                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Data Cleaning</Badge>
+                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Data Visualization</Badge>
+                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">Maps</Badge>
+                    <Badge className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-400/30 text-white">State-wise Analysis</Badge>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="bg-white/10 backdrop-blur-md border-white/20">
                 <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="flex items-center gap-2 text-white">
-                        <ExternalLink className="h-5 w-5 text-green-400" />
-                        Order Nova
-                      </CardTitle>
-                      <CardDescription className="text-white/60">Product Comparison Tool</CardDescription>
-                    </div>
-                    <Badge className="bg-gradient-to-r from-green-500 to-blue-500">In Development</Badge>
-                  </div>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-cyan-400" />
+                    Electric Vehicle Analysis
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Power BI Dashboard</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/80 mb-4">
-                    Currently developing a comprehensive product comparison tool that aggregates real-time 
-                    prices and offers from multiple e-commerce platforms. The application helps users make 
-                    informed purchasing decisions by providing price history and deal alerts.
+                    Built an interactive Power BI dashboard analyzing 150K+ EV registrations. Cleaned and modeled the dataset using Power Query and DAX to ensure accurate metrics. Discovered that 78% of registrations were BEVs, with Tesla leading at ~69K vehicles (~46% market share). Visualized strong adoption growth from 2010–2023 using time-series charts, regional maps, and slicers for deep drill-downs.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border-green-400/30 text-white">React.js</Badge>
-                    <Badge className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border-green-400/30 text-white">API Integration</Badge>
-                    <Badge className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border-green-400/30 text-white">Real-time Data</Badge>
-                    <Badge className="bg-gradient-to-r from-green-500/20 to-blue-500/20 border-green-400/30 text-white">Price Comparison</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">Power BI</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">Power Query</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">DAX</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">150K+ Records</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">BEV Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 border-cyan-400/30 text-white">Growth Trends</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-md border-white/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-emerald-400" />
+                    ElectroHub Sales & Profit Analysis Dashboard
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Power BI Dashboard</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/80 mb-4">
+                    Created a Power BI dashboard using ElectroHub sales data to understand business performance. Shows top and bottom 5 products, sales and profit trends over time, and their correlation. Compares different time periods and includes average discount, total orders, and detailed order breakdowns (sales, profit, discounts, net sales). Features interactive filters by product, date, customer ID, and promotion type. Identifies top-contributing cities by sales. Demonstrates ability to clean data, analyze sales metrics, and transform numbers into actionable business insights.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">Power BI</Badge>
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">Sales Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">Data Cleaning</Badge>
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">Profit Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">Interactive Filters</Badge>
+                    <Badge className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/30 text-white">KPI Dashboard</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-md border-white/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-yellow-400" />
+                    Global Profit Analysis – Excel Dashboard (My First Excel Project)
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Excel Dashboard</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/80 mb-4">
+                    This was my first project in Excel where I created a complete dashboard from scratch. Cleaned the data, built pivot tables, and visualized the profit performance of different regions and product categories. The dashboard shows which areas are doing well, which ones need improvement, and the overall profit distribution. This project helped me understand how raw data can be turned into clear, simple insights using only Excel.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Excel</Badge>
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Pivot Tables</Badge>
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Data Cleaning</Badge>
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Dashboard Design</Badge>
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Regional Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border-yellow-400/30 text-white">Profit Visualization</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-md border-white/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-red-400" />
+                    Task Tracking System In Google Sheet
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Google Sheets Automation</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/80 mb-4">
+                    Engineered an intelligent task management system in Google Sheets that transforms raw task data into real-time, decision-ready insights. Built a dynamic dashboard to instantly track priorities, progress, and overdue tasks. Enabled business owners to spot execution gaps early and drive faster, data-backed actions with confidence. Features automated status updates, priority tracking, and deadline monitoring.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Google Sheets</Badge>
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Task Management</Badge>
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Dashboard</Badge>
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Data Automation</Badge>
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Real-time Tracking</Badge>
+                    <Badge className="bg-gradient-to-r from-red-500/20 to-rose-500/20 border-red-400/30 text-white">Priority Management</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-md border-white/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BarChart3 className="h-5 w-5 text-violet-400" />
+                    Product Sales Management Analysis In Excel
+                  </CardTitle>
+                  <CardDescription className="text-white/60">Excel Dashboard</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/80 mb-4">
+                    Built a smart Excel-based sales management system that transforms raw product data into actionable insights. The dashboard provides real-time visibility into sales performance by product, region, and time period, enabling quick analysis of top-selling and underperforming items through interactive slicers and visuals. Designed for fast decision-making and efficient sales tracking with comprehensive KPI metrics.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">Excel</Badge>
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">Sales Analysis</Badge>
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">Pivot Tables</Badge>
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">Interactive Slicers</Badge>
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">KPI Metrics</Badge>
+                    <Badge className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 border-violet-400/30 text-white">Regional Performance</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -447,6 +515,10 @@ export default function Index() {
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-blue-400" />
                     <span className="text-white">mehuldindorkar3107@gmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Linkedin className="h-5 w-5 text-blue-400" />
+                    <a href="https://www.linkedin.com/in/mehul-dindorkar/" target="_blank" rel="noopener noreferrer" className="text-white underline">linkedin.com/in/mehul-dindorkar</a>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-green-400" />
