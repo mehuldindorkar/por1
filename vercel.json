@@ -4,7 +4,7 @@
   "outputDirectory": "dist/spa",
   "functions": {
     "api/resume/download.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs18.x@latest"
     }
   },
   "routes": [
